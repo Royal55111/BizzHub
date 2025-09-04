@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signUpWithEmail } from "../../authHelper";  // ✅ use signup helper
+import { signUpWithEmail } from "../../authhelper";  // ✅ use signup helper
 
 function Email() {
   const [email, setEmail] = useState("");

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { loginWithEmail } from "../../authHelper";
+import { loginWithEmail } from "../../authhelper";
 
 function Login(prop) {
   const [email, setEmail] = useState("");
