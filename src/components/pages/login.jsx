@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { loginWithEmail } from "../../authHelper";  // ✅ use loginWithEmail
+import { loginWithEmail } from "../../authHelper";
 
 function Login(prop) {
   const [email, setEmail] = useState("");
