@@ -1,6 +1,8 @@
 import GlobeView from "../globeview";
+import { useEffect, useState } from "react";
 
-function Home() {
+function Home(prop) {
+ 
   return (
     <div>
       <nav className="naver">
@@ -16,17 +18,17 @@ function Home() {
             <a href="#">Resource's</a>
             <i className="bi-chevron-down"></i>
           </div>
-          <div>
+          <div onClick={prop.about}>
             <a href="#">About Us</a>
           </div>
         </div>
         <div className="naver-3">
           <div className="naver-3-1">
             <div>
-              <h2>SignUp</h2>
+              <h2 onClick={prop.sign}>SignUp</h2>
             </div>
             <div>
-              <h2>SignIn</h2>
+              <h2 onClick={prop.log}>LogIn</h2>
             </div>
           </div>
           <div className="lang">
@@ -75,6 +77,18 @@ function Home() {
           </div>
         </section>
       </section>
+      <section className="now1">
+        <div className="now">
+          
+        </div>
+      </section>
+      <footer className="footer">
+        <div className="footer1">
+          <img src="/good.png" alt="" />
+          <h1>BizzHub</h1>
+        </div>
+        <h2 className="copyright">&copy; 2026 DocStandardCo-operation. All rights reserved.</h2>
+      </footer>
     </div>
   );
 }
